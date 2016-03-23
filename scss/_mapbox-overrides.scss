@@ -1,0 +1,74 @@
+.leaflet-popup-content {
+  padding: 0;
+  min-width: 280px;
+}
+.leaflet-popup-content-wrapper, .map-legends, .map-tooltip {
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  color: #4f5254;
+  text-align: center;
+  font-family: 'TradeGothicW01-BoldCn20_675334';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.map-title {
+  @include fontSize(22px);
+  font-weight: 600;
+  display: block;
+  padding: 0 25px;
+}
+
+.map-desc {
+  @include fontSize(13px);
+  font-family: "Futura LT W01 Light Condensed", "Arial Narrow", Helvetica, sans-serif;
+  padding: 0 25px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.leaflet-popup-tip {
+  border-top-color: white;
+}
+
+.markermusic:hover{
+  background-image: url('../images/map-music-hover.png'); 
+}
+
+.markerstar:hover{
+  background-image: url('../images/map-star-hover.png'); 
+}
+
+.markerpint:hover{
+  background-image: url('../images/map-pint-hover.png'); 
+}
+
+.markerbrew:hover{
+  background-image: url('../images/map-brew-hover.png'); 
+}
+
+.popup-details {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  > div {
+    white-space: nowrap;
+    width: 50%;
+    float: left;
+    color: white;
+    padding: 15px;
+    background-color: #171d21;
+    > span {
+      margin-right: 5px;
+    }
+    &:first-of-type {
+      background-color: #222b31;
+    }
+  }
+}

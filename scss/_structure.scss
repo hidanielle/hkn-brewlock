@@ -1,0 +1,30 @@
+.horizontal-center { @extend %horizontal-center; }
+%horizontal-center {
+  margin: 0 auto;
+}
+
+.vertical-center { @extend %vertical-center; }
+%vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@function calculatePB($height, $width, $size) {
+  $padding: $height / $width * $size;
+  @return $padding*1%;
+}
+
+@mixin paddingBottom($height, $width, $size) {
+  padding-bottom: calculatePB($height, $width, $size);
+}
+
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: $i/12 * 100%;
+    @include respond-to(small) {
+      width: 100%;
+    }
+  }
+}

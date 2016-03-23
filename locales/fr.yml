@@ -1,0 +1,37 @@
+title: "Brewlock"
+lang: "English"
+lang_url: "index.en.html"
+header: "<span class='pull-left'>VOICI UNE BIÈRE AUSSI</span> <em class='fit-1-fr'>FRAÎCHE</em> QUE LE JOUR OÙ ELLE A QUITTÉ LA <em class='small fit-2-fr'>BRASSERIE</em>"
+p_1: "L'AIR EST BON POUR NOUS, MAIS PAS POUR LA BIÈRE. LA BIÈRE EST ENFERMÉE DANS NOS BARILS MUNIS DU SYSTÈME BREWLOCK INNOVATEUR À LA BRASSERIE D'AMSTERDAM AFIN DE LA PROTÉGER DE TOUT CE QUI POURRAIT Y ENTRER OU EN SORTIR, DONNANT LIEU À UNE BIÈRE PARFAITEMENT SATURÉE À TOUT COUP.<br><br>LES NOUVEAUX BARILS HEINEKEN MUNIS DU SYSTÈME BREWLOCK PROTÈGENT LA BIÈRE CONTRE L'AIR JUSQU'AU MOMENT OÙ ELLE EST VERSÉE DANS VOTRE VERRE, DONNANT LIEU À UNE BIÈRE PARFAITEMENT SATURÉE À TOUT COUP. "
+btn: "POUR EN SAVOIR PLUS"
+process_1:
+  header: "DES INGRÉDIENTS DE QUALITÉ. "
+  copy: "LA RECETTE INCHANGÉE RENFERME DES INGRÉDIENTS PURS ET NATURELS POUR CRÉER LE GOÛT RICHE, ÉQUILIBRÉ ET AGRÉMENTÉ DES NOTES FRUITÉES SUBTILES PROPRES À HEINEKEN."
+process_2:
+  header: "BRASSÉE À AMSTERDAM."
+  copy: "SELON LA MÊME TRADITION CONSACRÉE ET LES MÊMES NORMES ÉLEVÉES. MAINTENANT SERVIE DANS SON ÉTAT LE PLUS PUR. "
+process_3:
+  header: "FRAÎCHEUR GARANTIE."
+  copy: "LE BARIL BREWLOCK PROTÈGE LA BIÈRE CONTRE L’AIR ET LA LUMIÈRE, PRÉSERVANT AINSI SA SATURATION ET SA FRAÎCHEUR."
+process_4:
+  header: "LE PARFAIT VERRE DE BIÈRE."
+  copy: "LE BARIL BREWLOCK VOUS PROCURE UNE BIÈRE AU GOÛT FRANC ET VIF DE LA BRASSERIE À VOTRE VERRE.  FRAÎCHEUR ASSURÉE À TOUT COUP."
+sub_header: "Beer Finder"
+cta_1: "Brewlock"
+cta_2: "SERVIE EXTRA FROIDE"
+footer:
+  link_1:
+    cta: "ENTREPRISE"
+    link: "http://www.theheinekencompany.com/"
+  link_2:  
+    cta: "TERMES D'UTILISATION/CONFIDENTIALITÉ"
+    link: "http://www.heineken.com/ca/fr/Terms-of-Use-and-Privacy "
+  link_3:  
+    cta: "FAQ "
+    link: "http://www.heineken.com/ca/fr/FAQ"
+  link_4:  
+    cta: "INFORMATIONS NUTRITIONNELLES"
+    link: "http://www.heineken.com/ca/fr/Nutritional-Values"
+  social: 
+    cta: "SUIVEZ-NOUS"
+    link: ""

@@ -1,0 +1,41 @@
+$filter-line-height: 2.5;
+
+.map {
+  position: relative;
+  z-index: 1;
+}
+
+.map-filters {
+  margin-top: 60px;
+  padding: 0 15px;
+  .col-xs-6 {
+    padding: 0;
+  }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #171d21;
+    line-height: 5;
+    color: #cfcfdb;
+    text-transform: uppercase;
+    font-family: 'TradeGothicW01-BoldCn20_675334';
+    @include fontSize(19.5px);
+    &.active,
+    &:hover {
+      background-color: #222b31;
+    }
+    @include respond-to(small) {
+      @include fontSize(15px);
+    }
+  }
+}
+
+#map {
+  width: 100%;
+  height: 580px;
+  margin: 0 auto;
+  @include respond-to(small) {
+    height: 400px;
+  }
+}

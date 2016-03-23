@@ -1,0 +1,29 @@
+.process-container {
+  max-width: 230px;
+  @extend %horizontal-center;
+}
+
+.process-icons {
+  background-image: url('../images/process-icons.png');
+  background-repeat: no-repeat;
+  background-size: 270px;
+  display: block;
+  width: 135px;
+  height: 118px;
+  margin: 0 auto 50px auto;
+}
+
+.icon {
+  &-barley {
+    background-position: -135px -118px;
+  }
+  &-brewery {
+    background-position: 0 -118px;
+  }
+  &-pint {
+    background-position: 0 0;
+  }
+  &-lock {
+    background-position: -135px 0;
+  }
+}

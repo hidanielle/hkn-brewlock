@@ -1,0 +1,106 @@
+doctype html
+html(lang="#{$localeName}")
+
+  - var dev = false
+  - var lang = $localeName
+
+  head
+    title #{$i18n.title}
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+    //- link(rel="stylesheet" type="text/css" media="all" href="http://www.heineken.com/browser-resources/css/main.min.css?v=20160225_143338")
+    link(href='//api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet')
+    link(rel="stylesheet", href="css/app.css")
+
+
+
+    script(src='//fast.fonts.net/jsapi/85bc0938-b386-4aef-94fc-5815e597c104.js')
+
+
+  <!--[if lte IE 9]>
+  body(class="#{$localeName} custom-style ie9")
+  <![endif]-->
+  <![if gt IE 9 | !IE]>
+  <body class="#{$localeName} custom-style">
+  <![endif]>
+
+  include ./_nav.jade
+
+  section.top-section(data-stellar-background-ratio="0.7")
+    .container-fluid
+      .pint-container(data-stellar-ratio="0.5", data-stellar-vertical-offset="80")
+      .intro-container
+        .intro-lockup
+          h1(class="#{$localeName}") !{$i18n.header}
+        .campaign-lockup.text-center
+          img(src="images/brew-1x-#{$localeName}.png", alt="")
+        p.larger !{$i18n.p_1}
+        a.btn.btn-primary(href="#process") #{$i18n.btn}
+    #process
+  section.mid-section
+    .container-fluid
+      .row
+        .col-md-3
+          .process-container
+            .process-icons.icon-barley
+            h3 #{$i18n.process_1.header}
+            p #{$i18n.process_1.copy}
+        .col-md-3
+          .process-container
+            .process-icons.icon-brewery
+            h3 #{$i18n.process_2.header}
+            p #{$i18n.process_2.copy}
+        .col-md-3
+          .process-container
+            .process-icons.icon-lock
+            h3 #{$i18n.process_3.header}
+            p #{$i18n.process_3.copy}
+        .col-md-3
+          .process-container
+            .process-icons.icon-pint
+            h3 #{$i18n.process_4.header}
+            p #{$i18n.process_4.copy}
+
+
+  section.map-section.map
+    .container-fluid
+      h2 #{$i18n.sub_header}
+
+      .row.map-filters
+        .col-xs-6
+          a.btn-filter.active(href="#" data-type="brew") #{$i18n.cta_1}
+        .col-xs-6
+          a.btn-filter(href="#" data-type="cold") #{$i18n.cta_2}
+
+      #map
+
+  include ./_footer.jade
+
+  include ./_overlay.jade
+
+  script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+
+  //- <script src="https://apis.google.com/js/client.js" gapi_processed="true"></script>
+  //- <script src="http://www.heineken.com/browser-resources/scripts/main.min.js?v=20160225_143342"></script>
+
+  script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+  script(src='//api.mapbox.com/mapbox.js/v2.2.4/mapbox.js')
+  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+  <!--[if gt IE 9 | !IE ]><!-->
+  script(src='//cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js')
+  script.
+    window.sr = ScrollReveal().reveal('.process-container', {reset: true}, 150);
+  <![endif]-->
+
+  script(src='js/jquery.stellar.min.js')
+  script(src='js/jquery.fittext.js')
+  
+  script(src='js/app.min.js')
+
+  script(src='//localhost:35729/livereload.js')

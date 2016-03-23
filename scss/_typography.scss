@@ -1,0 +1,83 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h1 {
+  @include fontSize(55px);
+  font-weight: 600;
+  @include respond-to(medium) {
+    @include fontSize(40px);
+    margin-bottom: 0;
+  }
+  @include respond-to(small) {
+    @include fontSize(35px);
+    text-align: center;
+  }
+}
+
+h2,
+h3 {
+  font-weight: 500;
+}
+
+h2 {
+  @include fontSize(70px);
+  font-family: 'TradeGothicW01-BoldCn20_675334';
+  @include respond-to(small) {
+    @include fontSize(55px);
+  }
+}
+
+h3 {
+  @include fontSize(26px);
+}
+
+p {
+  @include fontSize(18px);
+  line-height: 1.5;
+  margin: 30px 0;
+  &.larger {
+    @include fontSize(26px);
+  }
+}
+
+
+.wf-loading, .wf-inactive {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  button,
+  .btn-copy,
+  .leaflet-popup-content {
+    font-family: Arial Narrow !important;
+    letter-spacing: 0 !important;
+  }
+  .popup-details,
+  .btn-copy {
+    font-size: 10px;
+    line-height: 2.7;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 2;
+  }
+}

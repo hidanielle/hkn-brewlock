@@ -1,0 +1,40 @@
+title: "Brewlock"
+lang: "Francais"
+lang_url: "index.fr.html"
+header: "INTRODUCING BEER AS <em class='fit-1'>FRESH</em> AS THE DAY IT LEFT THE <em class='small fit-2'>BREWERY</em>"
+p_1: "Air is good for us, but not for beer. Our innovative BrewLock kegs lock in the beer at the brewery in Amsterdam to protect it from anything going in our out, giving you perfectly carbonated beer, every time. <br><br>New Heineken BrewLock kegs protect beer from air until the moment it's poured into your glass,  delivering perfectly carbonated beer, every time."
+btn: "Learn More"
+process_1:
+  header: "Quality Ingredients."
+  copy: "The recipe is still the same, using pure, natural ingredients to create the balanced, rich taste and subtle fruity notes of Heineken."
+process_2:
+  header: "Brewed in Amsterdam."
+  copy: "Made with the same time-honoured tradition and always held to the highest standard, now served in its purest state."
+process_3:
+  header: "Freshness locked in."
+  copy: "BrewLock kegs completely seal the beer from light and air to preserve its natural carbonation and freshness."
+process_4:
+  header: "The perfect pint."
+  copy: "Brewlock kegs bring you clean, crisp beer from the brewery straight to your glass, so you'll have a fresh pint every time."
+sub_header: "Beer Finder"
+cta_1: "Brewlock"
+cta_2: "Extra Cold"
+footer:
+  link_1:
+    cta: "COMPANY"
+    link: "http://www.theheinekencompany.com/"
+  link_2:  
+    cta: "TERMS OF USE/PRIVACY"
+    link: "http://www.heineken.com/ca/Terms-of-Use-and-Privacy"
+  link_3:  
+    cta: "FAQ"
+    link: "http://www.heineken.com/ca/FAQ"
+  link_4:  
+    cta: "NUTRITION VALUES"
+    link: "http://www.heineken.com/ca/Nutritional-Values"
+  social: 
+    cta: "FOLLOW US"
+    link: ""
+
+
+

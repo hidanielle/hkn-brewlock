@@ -1,0 +1,10 @@
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  background-color: white;
+  color: #101417;
+  @include fontSize(20px);
+  border: none;
+  font-family: 'TradeGothicW01-BoldCn20_675334';
+  padding: 10px 60px;
+}

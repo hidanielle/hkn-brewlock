@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%; 
+  height: 100%;
+  font-family: "Futura LT W01 Light Condensed", "Arial Narrow", Helvetica, sans-serif;
+  text-rendering: optimizelegibility;
+  text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: #171a1d;
+  background-size: cover;
+  color: white;
+  margin-top: 90px;
+}
+
+
+.logo {
+  text-indent: -9999px;
+
+}
+
+.container-fluid {
+  @extend %horizontal-center;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  padding: 0;
+  @include respond-to(small) {
+    width: 90%
+  }
+  .top-section & {
+    width: 62.25%;
+  }
+}
+
+.top-section {
+  background: #171d21 url("../images/bg-banner.jpg") no-repeat;
+  background-size: 100%;
+  padding-bottom: 22.25%;
+  text-align: center;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    background: url("../images/blue-angle.png") no-repeat;
+    background-size: 100%;
+    @include paddingBottom(182, 1600, 100);
+  }
+}
+
+.pint-container {
+  position: absolute;
+  width: 60.375%;
+  max-width: 966px;
+  background: url("../images/pint-2x.png") no-repeat;
+  background-size: contain;
+  top: 0;
+  left: -10% !important;
+  @include paddingBottom(1358, 966, 60.375);
+  @include respond-to(medium) {
+    left: -10% !important;
+    top: 0 !important;
+  }
+  @include respond-to(small) {
+    left: -30% !important;
+    top: 0 !important;
+    background-image: url("../images/pint.png");
+  }
+}
+
+.intro-container {
+ width: 54.81927710843373%;
+ float: right;
+ @include respond-to(small) {
+    width: 100%;
+  }
+}
+
+
+// IMG of intro lock up
+
+// .intro-lockup  {
+//   @extend %horizontal-center;
+//   margin-top: 35%;
+//   max-width: 546px;
+//   width: 100%;
+//   position: relative;
+//   line-height: 0.9;
+//   @include paddingBottom(453, 546, 100);
+//   h1 {
+//     background: url("../images/header-1x.png") no-repeat;
+//     background-size: 100%;
+//     text-indent: -9999px;
+//     position: absolute;
+//     width: 100%;
+//     @include paddingBottom(453, 546, 100);
+//   }
+//   @include respond-to(small) {
+//     margin-top: 15%;
+//     margin-right: 10px;
+//     width: 70%;
+//     float: right;
+//   }
+// }
+
+.intro-lockup  {
+  @extend %horizontal-center;
+  margin-top: 35%;
+  width: 100%;
+  position: relative;
+  h1 {
+    background-size: 100%;
+    width: 100%;
+    font-size: 55px;
+    color: #4db453;
+    line-height: 0.9;
+    font-family: "Futura LT W01 Light Condensed", "Arial Narrow", Helvetica, sans-serif;
+    em {
+      font-size: 258px;
+      color: white;
+      display: block;
+      font-family:'Futura LT W01 Bold Condensed';
+    }
+    em.small {
+      font-size: 132px;
+      line-height: 1.2;
+    }
+  }
+  @include respond-to(small) {
+    margin-top: 15%;
+    margin-right: 10px;
+    width: 70%;
+    float: right;
+  }
+}
+
+.campaign-lockup {
+  padding: 20px 0;
+}
+
+.mid-section {
+  position: relative;
+  background-color: #222b31;
+  padding: 60px 0;
+  p {
+    color: #999999;
+  }
+}
+
+.map-section {
+  background-color: white;
+  padding: 60px 0;
+  color: #171d21;
+  text-align: center;
+}

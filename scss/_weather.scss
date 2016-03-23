@@ -1,0 +1,63 @@
+.weather {
+  position: relative;
+  padding-bottom: 240px;
+  background: url('../images/weather-toronto.png') no-repeat bottom center;
+  .icon {
+    top: 10px;
+    left: 20px;
+    width: 44px;
+    height: 44px;
+
+    &--rain {
+       background: url('../images/weather-rain-2x.png') no-repeat;
+       background-size: 100%;
+    }
+    &--snow {
+       background: url('../images/weather-snow-2x.png') no-repeat;
+       background-size: 100%;
+    }
+    &--cloud {
+       background: url('../images/weather-cloudy-2x.png') no-repeat;
+       background-size: 100%;
+    }
+    &--sun {
+       background: url('../images/weather-sunny-2x.png') no-repeat;
+       background-size: 100%;
+    }
+  }
+  @include respond-to(small) {
+    display: none;
+  }
+}
+
+.temp {
+  @include fontSize(70px);
+  right: 10px;
+  top: 10px;
+  span {
+    @include fontSize(40px);
+    vertical-align: top;
+  }
+}
+
+.location-details {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px 20px 5px 20px;
+  background-color: rgba(255,255,255,0.25);
+  p {
+    margin-bottom: 0;
+  }
+}
+.location {
+  margin-bottom: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.weather-detail {
+  position: absolute;
+}
